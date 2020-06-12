@@ -2,7 +2,18 @@
 
 <%if current_user %>
     <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+    <%= link_to "Create Post", new_post_path%>
 <%else%> 
     <%= link_to "Log in", user_session_path %>
     <%= link_to "Sign in", new_user_registration_path %>
 <% end%>
+
+<% @posts.each do |p|  %>
+    <div>
+    <h4><%= link_to p.title, post_path(p.id) %></h4>
+    <% if user_signed_in? %>
+        <p>By : <small> <i> <%= p.user.username %> <i> </small></p>
+    <% end %>
+
+    </div>
+<% end %>
