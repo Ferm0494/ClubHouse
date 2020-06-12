@@ -48,10 +48,6 @@ https://clubhouse94.herokuapp.com/
 - Twitter: [@ferm494](https://twitter.com/ferm494)
 - Linkedin: [@Ferm0494](https://www.linkedin.com/in/ferm0494/)
 
-👤 **Muhammad arslan**
-- Github: [@@arslanbisharat](https://github.com/arslanbisharat)
-
-
 
 ## 🤝 Contributing
 
