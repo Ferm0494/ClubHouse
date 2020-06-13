@@ -1,0 +1,13 @@
+<h1>Create a new post <%= current_user.username %></h1>
+
+
+<%= form_for @post, html: {class: "mt-4 d-flex flex-column w-25 p-3 rounded shadow-lg bg-light "} do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label "Post" %>
+    <%= f.text_field :body, class: "input-h" %>
+
+    <%= f.submit "Create new Post", class: "btn btn-dark mt-3 w-50"  %>
+<% end %>
+

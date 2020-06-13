@@ -1,0 +1,10 @@
+
+<div class="mt-5 container shadow-lg bg-light rounded">
+<h2>Title: <%= @post.title %></h2>
+<p>Content: <%= @post.body %></p>
+
+<%if user_signed_in? %>
+    <p>By : <i><%= @post.user.username %></i> </p>
+<% end %>
+
+</div>

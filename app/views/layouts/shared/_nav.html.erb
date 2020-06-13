@@ -1,0 +1,28 @@
+
+
+
+<%if current_user %>
+    <% a = link_to "Sign out", destroy_user_session_path, method: :delete , class: "nav-link text-white "%>
+    <% b = link_to "Create Post", new_post_path, class: "nav-link text-white "%>
+<%else%> 
+    <% a = link_to "Log in", user_session_path, class: "nav-link text-white" %>
+    <% b = link_to "Sign in", new_user_registration_path, class: "nav-link text-white " %>
+<% end%>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Home",root_path, class: "nav-link text-white" %>
+      </li>
+      
+    </ul>
+      <li class="navbar-nav nav-item">
+      <%= a %>
+      <%= b %>
+      </li>
+  </div>
+</nav>
+
+
